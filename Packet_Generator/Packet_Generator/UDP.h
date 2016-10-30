@@ -1,4 +1,5 @@
-#pragma once
+#ifndef UDP_H
+#define UDP_H
 #include <cstdint>
 class UDP {
 private:
@@ -7,3 +8,4 @@ private:
 	uint64_t length;
 	char checksum;
 };
+#endif

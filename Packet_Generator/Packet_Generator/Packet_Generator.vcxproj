@@ -152,6 +152,7 @@
     <ClInclude Include="Ethernet.h" />
     <ClInclude Include="IPv4.h" />
     <ClInclude Include="IPv6.h" />
+    <ClInclude Include="Packet.h" />
     <ClInclude Include="TCP.h" />
     <ClInclude Include="UDP.h" />
   </ItemGroup>

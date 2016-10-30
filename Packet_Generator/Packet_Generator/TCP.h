@@ -1,4 +1,5 @@
-#pragma once
+#ifndef TCP_H
+#define TCP_H
 #include <cstdint>
 
 class TCP {
@@ -14,3 +15,4 @@ private:
 	uint16_t check_sum;
 	uint16_t urgent_pointer;
 };
+#endif
