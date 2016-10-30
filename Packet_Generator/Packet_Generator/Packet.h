@@ -3,7 +3,7 @@
 #include "Ethernet.h"
 
 class Packet {
-private:
+public:
 	Ethernet* link;
 };
 #endif

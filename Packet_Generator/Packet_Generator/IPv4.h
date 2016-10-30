@@ -5,7 +5,7 @@
 #include "UDP.h"
 
 class IPv4 {
-private:
+public:
 	uint8_t internet_header;
 	int differentiated_service_code;
 	uint16_t total_length;

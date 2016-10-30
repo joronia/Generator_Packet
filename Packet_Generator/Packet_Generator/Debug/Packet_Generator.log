@@ -1,2 +1,6 @@
 ﻿  main.cpp
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\main.cpp(17): warning C4305: '=': truncation from '__int64' to 'uint16_t'
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\main.cpp(17): warning C4309: '=': truncation of constant value
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\main.cpp(23): warning C4305: '=': truncation from '__int64' to 'uint16_t'
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\main.cpp(23): warning C4309: '=': truncation of constant value
   Packet_Generator.vcxproj -> C:\Users\jaoronia\Documents\Generator_Packet\Packet_Generator\Debug\Packet_Generator.exe
