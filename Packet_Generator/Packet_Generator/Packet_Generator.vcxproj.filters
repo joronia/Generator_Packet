@@ -19,4 +19,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UDP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TCP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Ethernet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPv6.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IPv4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>
