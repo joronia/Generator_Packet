@@ -1,18 +1,14 @@
 #ifndef TCP_H
 #define TCP_H
 #include <cstdint>
+#include <string>
 
 class TCP {
-private:
+public:
 	uint16_t source_port;
 	uint16_t destination_port;
-	uint32_t sequence_number;
-	uint32_t anknow_num;
-	char data_offset;
-	char reserved;
-	char flags;
-	uint16_t windows_size;
-	uint16_t check_sum;
-	uint16_t urgent_pointer;
+	int data_offset;
+	int reserved;
+	unsigned short check_sum;
 };
 #endif

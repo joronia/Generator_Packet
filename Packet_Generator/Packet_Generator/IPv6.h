@@ -1,20 +1,19 @@
 #ifndef IPv6_H
 #define IPv6_H
+#pragma once
 #include <cstdint>
+#include <string>
 #include "TCP.h"
 #include "UDP.h"
+using namespace std;
 
 class IPv6 {
-private:
-	int flow_label;
-	uint16_t payload_length;
-	uint8_t next_header;
-	char source_address;
-	char destination_address;
+public:
+	uint32_t payload_length;
+	string source_address_ipv6;
+	string destination_address_ipv6;
 	uint8_t ip_version;
-	int traffic_class;
-	uint8_t hop_limit;
-	TCP* L4;
-	UDP* sec_L4;
+	TCP* TCP_L4_next_header;
+	UDP* UDP_L4_next_header;
 };
 #endif

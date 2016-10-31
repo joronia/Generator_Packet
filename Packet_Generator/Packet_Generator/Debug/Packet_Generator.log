@@ -1,2 +1,5 @@
 ﻿  main.cpp
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\ipv4.h(21): warning C4018: '<': signed/unsigned mismatch
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\main.cpp(83): warning C4018: '<': signed/unsigned mismatch
+c:\users\jaoronia\documents\generator_packet\packet_generator\packet_generator\main.cpp(75): warning C4715: 'Packet_Generator': not all control paths return a value
   Packet_Generator.vcxproj -> C:\Users\jaoronia\Documents\Generator_Packet\Packet_Generator\Debug\Packet_Generator.exe
