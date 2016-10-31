@@ -38,7 +38,7 @@ Packet* Packet_Generator(int test) {
 			protocol->link->data_ipv6->ip_version = 6; // Set the version to be IPv6
 			protocol->link->data_ipv6->source_address_ipv6 = "2001:0DB8:AC10:FE01:0000:0000:0000:0000"; //Random IPv6 address.
 			protocol->link->data_ipv6->destination_address_ipv6 = "2001:FB01:AC10:00D1:0001:0011:0111:1111"; // Random IPv6 address.
-			
+
 		}
 		else {
 			protocol->link->data_ipv4 = new IPv4();
@@ -51,24 +51,27 @@ Packet* Packet_Generator(int test) {
 				protocol->link->data_ipv4->TCP_L4_next_header->data_offset = 10; //number of fields in header TCP
 				protocol->link->data_ipv4->TCP_L4_next_header->source_port = 45;
 				protocol->link->data_ipv4->TCP_L4_next_header->destination_port = 12;
+				protocol->link->data_ipv4->TCP_L4_next_header->check_sum = protocol->link->data_ipv4->Header_Checksum("00345e04400040063", 13); // Random packet address passed in and assigned to TCP Check_sum
 			}
 			else {
 				protocol->link->data_ipv4->UDP_L4_next_header = new UDP(); //IPv4 has a UCP
 				protocol->link->data_ipv4->UDP_L4_next_header->destination_port_number = 40; //Random port number for destination
 				protocol->link->data_ipv4->UDP_L4_next_header->source_port_number = 12;
 				protocol->link->data_ipv4->UDP_L4_next_header->length = 65507; //Confused looked online
+				protocol->link->data_ipv4->UDP_L4_next_header->check_sum = protocol->link->data_ipv4->Header_Checksum("00345e04400040063", 13); // Random packet address passed in and assigned to TCP Check_sum
 			}
 			protocol->link->data_ipv4->ip_version = 4; // 4 because the type we are using is ipv4.
 			protocol->link->data_ipv4->source_address = 172162541; //Random IP address for the source
 			protocol->link->data_ipv4->destination_address = 1720420212; //Random IP address for the destination
 
+
 		}
 
-		
+
 		return protocol;
 	}
-	
-	
+
+
 }
 
 int main() {
