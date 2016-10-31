@@ -3,10 +3,13 @@
 #include <cstdint>
 #include <string>
 class UDP {
-private:
+public:
 	int source_port_number;
 	int destination_port_number;
 	uint64_t length;
-	char checksum;
+	//char checksum;
+	void checksum() {
+
+	}
 };
 #endif

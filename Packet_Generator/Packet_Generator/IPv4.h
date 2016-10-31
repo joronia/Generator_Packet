@@ -12,8 +12,8 @@ public:
 	//string differentiated_service_code;
 	uint16_t total_length;
 	//int identification;
-	TCP* TCP_L4;
-	UDP* UDP_L4;
+	TCP* TCP_L4_next_header;
+	UDP* UDP_L4_next_header;
 	uint16_t header_checksum;
 	//uint16_t fragment_offset;
 	//int time_live;
